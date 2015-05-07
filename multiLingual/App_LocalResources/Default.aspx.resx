@@ -117,10 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Button1.Text" xml:space="preserve">
+  <data name="Button2.Text" xml:space="preserve">
     <value>Hello</value>
   </data>
+  <data name="f.Text" xml:space="preserve">
+    <value>female</value>
+  </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>English</value>
+    <value>My name is:</value>
+  </data>
+  <data name="lbl_gender.Text" xml:space="preserve">
+    <value>I am:</value>
+  </data>
+  <data name="lbl_h1.Text" xml:space="preserve">
+    <value>Welcome to MSCI:3300</value>
+  </data>
+  <data name="lbl_h2.Text" xml:space="preserve">
+    <value>Software design and Development</value>
+  </data>
+  <data name="lbl_salary.Text" xml:space="preserve">
+    <value>When I graduate, I hope to earn:</value>
+  </data>
+  <data name="m.Text" xml:space="preserve">
+    <value>male</value>
+  </data>
+  <data name="lbl_language.Text" xml:space="preserve">
+    <value>Please select your language:</value>
   </data>
 </root>
