@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Button2.Text" xml:space="preserve">
-    <value>你好</value>
+    <value>提交</value>
   </data>
   <data name="f.Text" xml:space="preserve">
     <value>女士</value>
@@ -141,7 +141,13 @@
   <data name="m.Text" xml:space="preserve">
     <value>男士</value>
   </data>
+  <data name="lbl_hello.Text" xml:space="preserve">
+    <value>您好</value>
+  </data>
   <data name="lbl_language.Text" xml:space="preserve">
     <value>请选择您的语言：</value>
+  </data>
+  <data name="lbl_line1.Text" xml:space="preserve">
+    <value>我希望你能实现你的梦想，当你毕业于</value>
   </data>
 </root>

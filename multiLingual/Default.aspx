@@ -13,13 +13,15 @@
         <div id="left">
             <asp:Label ID="lbl_language" runat="server" Text="lbl_language" meta:resourceKey="lbl_language"></asp:Label>
         <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="152px">
-            <asp:ListItem Value="auto">Auto</asp:ListItem>
+            
             <asp:ListItem Value="en-US">English</asp:ListItem>
             <asp:ListItem Value="zh">中文</asp:ListItem>
             <asp:ListItem Value="ar">العربية</asp:ListItem>
             <asp:ListItem Value="es">español</asp:ListItem>
             </asp:DropDownList>
             </div>
+
+             
         
     <div id="right">
     <h1>
@@ -32,10 +34,10 @@
         <asp:TextBox ID="tb_name" runat="server" ></asp:TextBox>
         <br /><br />
         <asp:Label ID="lbl_gender" runat="server" Text="lbl_gender" meta:resourceKey="lbl_gender"></asp:Label>
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="141px" CssClass="cssradiobutton">
-            <asp:ListItem Value="f" meta:resourceKey="f">female</asp:ListItem> 
-            <asp:ListItem Value="m" meta:resourceKey="m">male</asp:ListItem>
-        </asp:RadioButtonList>
+        
+        <asp:RadioButton ID="f" runat="server" Text="Female" meta:sourceKey="f" GroupName="gender" />
+        <asp:RadioButton ID="m" runat="server" Text="Male" meta:sourceKey="m" GroupName="gender"/>
+        
         <br />
         
 
@@ -58,9 +60,16 @@
 
         </p>
         <p>
-       <asp:Button ID="Button2" runat="server" Text="Button" meta:resourceKye="Button2"></asp:Button>
+            <asp:Button ID="Button2" runat="server" Text="Button2" meta:resourceKey="Button2"/>
         </p>
         </div>
+            
+            <asp:Label ID="lbl_hello" runat="server" Text="lbl_hello" meta:resourceKey="lbl_hello"></asp:Label>
+            <asp:Label ID="lbl_title" runat="server" Text="lbl_title" meta:resourceKey="lbl_title"></asp:Label>
+            <asp:Label ID="lbl_name" runat="server" Text="lbl_name"></asp:Label>
+            <asp:Label ID="lbl_line1" runat="server" Text="lbl_line1" meta:resourceKey="lbl_line1"></asp:Label>
+            
+            
             </div>
             
     </form>
