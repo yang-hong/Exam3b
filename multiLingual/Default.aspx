@@ -5,14 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="\stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
+        
         <div id="vertical">
+        <div id="notispostback" runat="server">
         <div id="left">
             <asp:Label ID="lbl_language" runat="server" Text="lbl_language" meta:resourceKey="lbl_language"></asp:Label>
-        <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="152px" autopistback="true">
+        <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="152px">
 
             <asp:ListItem Value="en-US">English</asp:ListItem>
             <asp:ListItem Value="zh">中文</asp:ListItem>
@@ -22,7 +24,7 @@
             </div>
 
         
-    <div id="notispostback" runat="server">
+    
     <div id="right">
     <h1>
         <asp:Label ID="lbl_h1" runat="server" Text="lbl_h1" meta:resourceKey="lbl_h1"></asp:Label>

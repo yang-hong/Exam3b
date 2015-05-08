@@ -7,35 +7,34 @@ Partial Class _Default
         Dim lang As String = Request("Language1")
         If lang IsNot Nothing Or lang <> "" Then
             Thread.CurrentThread.CurrentUICulture = New CultureInfo(lang)
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(lang)
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(lang)
 
         End If
     End Sub
 
 
 
+        Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+            Dim name As String = tb_name.Text
+            Dim money As Decimal = tb_salary.Text
 
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim name As String = tb_name.Text
-        Dim money As Decimal = tb_salary.Text
+            If f.Checked Then lbl_m1.Text = ""
 
-        If f.Checked Then lbl_m1.Text = ""
+            If m.Checked Then lbl_f1.Text = ""
 
-        If m.Checked Then lbl_f1.Text = ""
+            lbl_name.Text = tb_name.Text
+            lbl_date.Text = Calendar1.SelectedDate.ToShortDateString
+            lbl_money.Text = String.Format("{0:c}", money)
+            f.Checked = False
+            m.Checked = False
+            notispostback.Visible = False
+            postback1.Visible = True
+        End Sub
 
-        lbl_name.Text = tb_name.Text
-        lbl_date.Text = Calendar1.SelectedDate.ToShortDateString
-        lbl_money.Text = String.Format("{0:c}", money)
-        f.Checked = False
-        m.Checked = False
-        notispostback.Visible = False
-        postback1.Visible = True
-    End Sub
-
-    Protected Sub Page_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
-        postback1.Visible = False
+        Protected Sub Page_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
+            postback1.Visible = False
 
 
-    End Sub
+        End Sub
 
-End Class
+    End Class
