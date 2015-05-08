@@ -12,8 +12,8 @@
         <div id="vertical">
         <div id="left">
             <asp:Label ID="lbl_language" runat="server" Text="lbl_language" meta:resourceKey="lbl_language"></asp:Label>
-        <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="152px">
-            
+        <asp:DropDownList ID="Language1" runat="server" AutoPostBack="true" Height="16px" Width="152px" autopistback="true">
+
             <asp:ListItem Value="en-US">English</asp:ListItem>
             <asp:ListItem Value="zh">中文</asp:ListItem>
             <asp:ListItem Value="ar">العربية</asp:ListItem>
@@ -22,7 +22,7 @@
             </div>
 
         
-    <div id="postback" >
+    <div id="notispostback" runat="server">
     <div id="right">
     <h1>
         <asp:Label ID="lbl_h1" runat="server" Text="lbl_h1" meta:resourceKey="lbl_h1"></asp:Label>
@@ -63,8 +63,8 @@
         </p>
         </div>
         </div>
-            
-            
+           
+            <div id="postback1" runat="server">
             <asp:Label ID="lbl_hello" runat="server" Text="lbl_hello" meta:resourceKey="lbl_hello"></asp:Label>
             <asp:Label ID="lbl_f1" runat="server" Text="lbl_f1" meta:resourceKey="lbl_f1"></asp:Label>
             <asp:Label ID="lbl_m1" runat="server" Text="lbl_m1" meta:resourceKey="lbl_m1"></asp:Label>
@@ -77,6 +77,7 @@
             <asp:Label ID="lbl_line4" runat="server" Text="lbl_line4" meta:resourceKey="lbl_line4"></asp:Label>
             <asp:HyperLink ID="github"  runat="server" NavigateUrl="https://github.com/yang-hong">Github</asp:HyperLink>
             </div>
+        </div>
             
     </form>
 </body>

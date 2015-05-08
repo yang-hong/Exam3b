@@ -28,5 +28,14 @@ Partial Class _Default
         lbl_money.Text = String.Format("{0:c}", money)
         f.Checked = False
         m.Checked = False
+        notispostback.Visible = False
+        postback1.Visible = True
     End Sub
+
+    Protected Sub Page_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
+        postback1.Visible = False
+
+
+    End Sub
+
 End Class
