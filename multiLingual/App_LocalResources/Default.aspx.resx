@@ -165,4 +165,7 @@
   <data name="lbl_m1.Text" xml:space="preserve">
     <value>Mr</value>
   </data>
+  <data name="lbl_graduate.Text" xml:space="preserve">
+    <value>I plan to graduate on:</value>
+  </data>
 </root>

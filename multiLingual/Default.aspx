@@ -21,7 +21,7 @@
             </asp:DropDownList>
             </div>
 
-      <%If Not IsPostBack Then%>       
+        
     <div id="postback" >
     <div id="right">
     <h1>
@@ -35,13 +35,13 @@
         <br /><br />
         <asp:Label ID="lbl_gender" runat="server" Text="lbl_gender" meta:resourceKey="lbl_gender"></asp:Label>
         
-        <asp:RadioButton ID="f" runat="server" Text="Female" meta:sourceKey="f" GroupName="gender" />
-        <asp:RadioButton ID="m" runat="server" Text="Male" meta:sourceKey="m" GroupName="gender"/>
+        <asp:RadioButton ID="f" runat="server" Text="Female" meta:resourceKey="f" GroupName="gender" />
+        <asp:RadioButton ID="m" runat="server" Text="Male" meta:resourceKey="m" GroupName="gender"/>
         
         <br />
         
-
-
+        <br />
+        <asp:Label ID="lbl_graduate" runat="server" Text="lbl_graduate" meta:resourceKey="lbl_graduate"></asp:Label>
         <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px" CssClass="csscalendar">
             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
             <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
@@ -63,7 +63,7 @@
         </p>
         </div>
         </div>
-            <%Else%>
+            
             
             <asp:Label ID="lbl_hello" runat="server" Text="lbl_hello" meta:resourceKey="lbl_hello"></asp:Label>
             <asp:Label ID="lbl_f1" runat="server" Text="lbl_f1" meta:resourceKey="lbl_f1"></asp:Label>
@@ -77,7 +77,7 @@
             <asp:Label ID="lbl_line4" runat="server" Text="lbl_line4" meta:resourceKey="lbl_line4"></asp:Label>
             <asp:HyperLink ID="github"  runat="server" NavigateUrl="https://github.com/yang-hong">Github</asp:HyperLink>
             </div>
-            <%End If%>
+            
     </form>
 </body>
 </html>
