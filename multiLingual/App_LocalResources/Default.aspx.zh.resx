@@ -150,4 +150,19 @@
   <data name="lbl_line1.Text" xml:space="preserve">
     <value>我希望你能实现你的梦想，当你毕业于</value>
   </data>
+  <data name="lbl_f1.Text" xml:space="preserve">
+    <value>女士</value>
+  </data>
+  <data name="lbl_line2.Text" xml:space="preserve">
+    <value>希望你毕业后，你可以有一个成功的职业生涯。希望你会赚</value>
+  </data>
+  <data name="lbl_line3.Text" xml:space="preserve">
+    <value>当你拿到你的第一份工作</value>
+  </data>
+  <data name="lbl_line4.Text" xml:space="preserve">
+    <value>请访问我的</value>
+  </data>
+  <data name="lbl_m1.Text" xml:space="preserve">
+    <value>先生</value>
+  </data>
 </root>

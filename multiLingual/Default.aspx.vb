@@ -17,13 +17,16 @@ Partial Class _Default
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim name As String = tb_name.Text
+        Dim money As Decimal = tb_salary.Text
 
-        If f.Checked Then
-            lbl_title.Text = "Ms"
-        End If
-        If m.Checked Then
-            lbl_title.Text = "Mr"
-        End If
+        If f.Checked Then lbl_m1.Text = ""
+
+        If m.Checked Then lbl_f1.Text = ""
+
         lbl_name.Text = tb_name.Text
+        lbl_date.Text = Calendar1.SelectedDate.ToShortDateString
+        lbl_money.Text = String.Format("{0:c}", money)
+        f.Checked = False
+        m.Checked = False
     End Sub
 End Class

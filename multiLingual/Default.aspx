@@ -21,8 +21,8 @@
             </asp:DropDownList>
             </div>
 
-             
-        
+      <%If Not IsPostBack Then%>       
+    <div id="postback" >
     <div id="right">
     <h1>
         <asp:Label ID="lbl_h1" runat="server" Text="lbl_h1" meta:resourceKey="lbl_h1"></asp:Label>
@@ -41,7 +41,6 @@
         <br />
         
 
-       
 
         <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px" CssClass="csscalendar">
             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -63,15 +62,22 @@
             <asp:Button ID="Button2" runat="server" Text="Button2" meta:resourceKey="Button2"/>
         </p>
         </div>
+        </div>
+            <%Else%>
             
             <asp:Label ID="lbl_hello" runat="server" Text="lbl_hello" meta:resourceKey="lbl_hello"></asp:Label>
-            <asp:Label ID="lbl_title" runat="server" Text="lbl_title" meta:resourceKey="lbl_title"></asp:Label>
-            <asp:Label ID="lbl_name" runat="server" Text="lbl_name"></asp:Label>
-            <asp:Label ID="lbl_line1" runat="server" Text="lbl_line1" meta:resourceKey="lbl_line1"></asp:Label>
-            
-            
+            <asp:Label ID="lbl_f1" runat="server" Text="lbl_f1" meta:resourceKey="lbl_f1"></asp:Label>
+            <asp:Label ID="lbl_m1" runat="server" Text="lbl_m1" meta:resourceKey="lbl_m1"></asp:Label>
+            <asp:Label ID="lbl_name" runat="server" Text="lbl_name"></asp:Label><br />
+            <asp:Label ID="lbl_line1" runat="server" Text="lbl_line1" meta:resourceKey="lbl_line1"></asp:Label>         
+            <asp:Label ID="lbl_date" runat="server" Text="lbl_date"></asp:Label><br />
+            <asp:Label ID="lbl_line2" runat="server" Text="lbl_line2" meta:resourceKey="lbl_line2"></asp:Label>
+            <asp:Label ID="lbl_money" runat="server" Text="lbl_money"></asp:Label>
+            <asp:Label ID="lbl_line3" runat="server" Text="lbl_line3" meta:resourceKey="lbl_line3"></asp:Label><br />
+            <asp:Label ID="lbl_line4" runat="server" Text="lbl_line4" meta:resourceKey="lbl_line4"></asp:Label>
+            <asp:HyperLink ID="github"  runat="server" NavigateUrl="https://github.com/yang-hong">Github</asp:HyperLink>
             </div>
-            
+            <%End If%>
     </form>
 </body>
 </html>

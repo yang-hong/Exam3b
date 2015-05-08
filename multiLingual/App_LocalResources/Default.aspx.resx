@@ -150,4 +150,19 @@
   <data name="lbl_line1.Text" xml:space="preserve">
     <value>I hope your dream comes true when you graduate on</value>
   </data>
+  <data name="lbl_f1.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="lbl_line2.Text" xml:space="preserve">
+    <value>Hope after you graduate, you can have a successful career. Hope you can earn</value>
+  </data>
+  <data name="lbl_line3.Text" xml:space="preserve">
+    <value>when you get your first job!</value>
+  </data>
+  <data name="lbl_line4.Text" xml:space="preserve">
+    <value>Please visit me at</value>
+  </data>
+  <data name="lbl_m1.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
 </root>
